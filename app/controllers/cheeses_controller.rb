@@ -18,7 +18,11 @@ class CheesesController < ApplicationController
   end
 
   def favorite
-    
+    favorite = Favorite.create({
+      user_id: current_user.id,
+      cheese_id: params[:id]
+    })
+    redirect_to cheeses_path
   end
 
 
