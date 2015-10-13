@@ -17,6 +17,11 @@ class CheesesController < ApplicationController
     @cheese = Cheese.new
   end
 
+  def favorite
+    
+  end
+
+
   # GET /cheeses/1/edit
   def edit
   end
