@@ -10,6 +10,7 @@ var Navigation = React.createClass({
               <li><a href='/logout'>Logout</a></li>
               <li><a href='/cheeses'>Cheese list</a></li>
               <li><a href='/users'>List of Users</a></li>
+              <li><a href='/cheeses/new'>Add a cheese to the list</a></li>
             </ul>
           </div>
         </div>
