@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
   end
 
   def create #a session
-    user = User.find_by_username(params[:name])
+    user = User.find_by_email(params[:email])
     if user.present? && user.authenticate(params[:password])
       set_user_session(user)
       redirect_to cheeses_path, notice: "Log in successful."

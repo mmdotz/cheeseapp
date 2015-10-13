@@ -11,7 +11,9 @@
 
 
 
-<%= yield %>
+<%= yield %><br>
+<br>
+<%= "User logged in: #{current_user.inspect}" if current_user %>
 
 </body>
 </html>
