@@ -3,10 +3,7 @@ class SessionsController < ApplicationController
 
   def new #login page
   end
-
-  def about
-  end
-
+  
   def create #a session
     user = User.find_by_email(params[:email])
     if user.present? && user.authenticate(params[:password])

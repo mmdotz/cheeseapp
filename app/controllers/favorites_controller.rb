@@ -10,6 +10,7 @@ class FavoritesController < ApplicationController
   # GET /favorites/1
   # GET /favorites/1.json
   def show
+
   end
 
   # GET /favorites/new
