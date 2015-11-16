@@ -21,25 +21,12 @@ class CheesesController < ApplicationController
 
 
   def favorite
-      favorite = Favorite.create({
-        user_id: current_user.id,
-        cheese_id: params[:id]
-      })
-      redirect_to cheeses_path
-    end
-
-  # def favorite  Want to restrict access to ability to favorite if user exists in Favorite db
-  #   @favorite = Favorite.all
-  #   if @favorite.find_by(user_id: current_user.id)
-  #     favorite = Favorite.create({
-  #       user_id: current_user.id,
-  #       cheese_id: params[:id]
-  #     })
-  #     redirect_to cheeses_path
-  #   else
-  #   end
-  #
-  # end
+    favorite = Favorite.create({
+      user_id: current_user.id,
+      cheese_id: params[:id]
+    })
+    redirect_to cheeses_path
+  end
 
 
   # GET /cheeses/1/edit
